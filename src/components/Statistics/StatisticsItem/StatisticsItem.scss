@@ -1,0 +1,15 @@
+.statistics__item {
+    &-quantity {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 121px;
+        color: #F3F3F3;
+    }
+
+    &-name {
+        font-weight: 600;
+        font-size: $text-xl;
+        line-height: 28px;
+        color: #F3F3F3;
+    }
+}

@@ -5,7 +5,7 @@ import "./Intro.scss";
 
 const Intro = () => {
     return (
-        <div className="intro">
+        <section className="intro">
             <div className="container">
                 <div className="intro-inner">
                     <h2 className="intro-title">
@@ -19,7 +19,7 @@ const Intro = () => {
                     </Link>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
