@@ -1,0 +1,32 @@
+.header {
+    &-nav__list-item {
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 2px;
+            width: 0;
+            background-color: $white-c;
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+            transition: 0.5s;
+        }
+
+        &:hover::after {
+            width: 100%;
+            left: 0;
+            transition: 0.5s;
+        }
+    }
+
+    &-nav__list-link {
+        color: $white-c;
+        font-size: $text-lg;
+        font-weight: bold;
+    }
+
+    &-nav__list-link.active {
+        border-bottom: 2px solid $white-c;
+    }
+}

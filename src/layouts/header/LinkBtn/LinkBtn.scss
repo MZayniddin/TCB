@@ -1,0 +1,23 @@
+.header .link-btn {
+    max-width: 120px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 83px;
+    text-align: center;
+    font-weight: 500;
+    font-size: $text-lg;
+    color: $white-c;
+}
+
+.header .link-login {
+    border: 1px solid #8CD2D2;
+    filter: drop-shadow(0px 10px 50px #8CD2D2);
+}
+
+.header .link-signup {
+    background-color: #8D8DDB;
+
+    &:hover {
+        background-color: #7676d1;
+    }
+}

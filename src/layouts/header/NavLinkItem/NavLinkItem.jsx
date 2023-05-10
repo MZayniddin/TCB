@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 
+import "./NavLinkItem.scss";
+
 const NavLinkItem = ({ to, name }) => {
     return (
         <li className="header-nav__list-item">

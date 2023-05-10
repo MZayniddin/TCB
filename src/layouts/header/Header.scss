@@ -1,0 +1,26 @@
+.header {
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &-nav__list {
+        display: flex;
+        gap: 35px;
+    }
+
+    &__right {
+        flex: 1;
+        max-width: 250px;
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+    }
+}

@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo/logo.png";
 import NavLinkItem from "./NavLinkItem/NavLinkItem";
-import LinkBtn from "./BtnTop/LinkBtn";
+import LinkBtn from "./LinkBtn/LinkBtn";
 import Search from "./Search/Search";
+
+import "./Header.scss";
 
 const Header = () => {
     return (

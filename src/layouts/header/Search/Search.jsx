@@ -1,7 +1,9 @@
+import "./Search.scss";
+
 const Search = () => {
     return (
         <div className="search-wrapper">
-            <input type="text" className="search-input" />
+            <input type="text" placeholder="Search..." className="search-input" />
         </div>
     );
 };
