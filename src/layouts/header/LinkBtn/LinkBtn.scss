@@ -15,9 +15,9 @@
 }
 
 .header .link-signup {
-    background-color: #8D8DDB;
+    background-color: $light-ceil-c;
 
     &:hover {
-        background-color: #7676d1;
+        background-color: $crayola-c;
     }
 }
