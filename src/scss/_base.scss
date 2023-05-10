@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body{ 
+    background-color: $primary-c;
+}
+
+body,
+html {
+    font-weight: 400;
+    font-style: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    display: inline-block;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var($primary-c);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var($white-c);
+}
