@@ -4,7 +4,6 @@
     border-radius: 25px;
     background: $cc-gradient;
     box-shadow: $cc-shadow;
-    margin-bottom: 30px;
     overflow: hidden;
 
     &__image,
@@ -45,7 +44,7 @@
     }
 
     &__info {
-        padding-left: 50px;
+        padding-left: 60px;
         display: flex;
         flex-direction: column;
         gap: 35px;

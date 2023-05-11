@@ -2,7 +2,7 @@ import "./CenterCard.scss";
 import CenterCardInfoItem from "./CenterCardInfoItem/CenterCardInfoItem";
 
 const CenterCard = ({
-    center: { image, name, slug, center_address, top_teachers },
+    center: { image, name, slug, center_address, number_students, main_course },
 }) => {
     return (
         <article className="center-card">
@@ -18,10 +18,13 @@ const CenterCard = ({
                         name="Branches"
                         info={center_address?.apartment_number}
                     />
-                    <CenterCardInfoItem name="Type Courses" info={slug} />
+                    <CenterCardInfoItem
+                        name="Type Courses"
+                        info={main_course?.name}
+                    />
                     <CenterCardInfoItem
                         name="Students"
-                        info={`${top_teachers[0]?.number_students}+`}
+                        info={`${number_students}+`}
                     />
                     <li className="center-card__info-item">
                         <p className="center-card__info-distriction">
