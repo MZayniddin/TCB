@@ -1,0 +1,44 @@
+.advantage {
+    padding: 150px 0 200px;
+    position: relative;
+
+    &::after {
+        width: 260px;
+        aspect-ratio: 1/1;
+        content: "";
+        position: absolute;
+        bottom: 50px;
+        background-image: url("../../assets/images/ui/earth.png");
+        background-position: center;
+        animation: rotate ;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation: rotate 5s alternate-reverse infinite  ease-in-out;
+    }
+
+    &__title {
+        font-size: 87px;
+        line-height: 110%;
+        text-align: center;
+        text-transform: capitalize;
+        color: #F3F3F3;
+        margin-bottom: 57px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 11px;
+    }
+
+    @keyframes rotate {
+        from {
+            // transform: rotate(0);
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(20deg);
+        }
+    }
+}
