@@ -1,0 +1,55 @@
+.center-card__info {
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            left: -100px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:first-child::after {
+            content: url("../../../assets/ui-icons/location.svg");
+        }
+
+        &:nth-child(2)::after {
+            content: url("../../../assets/ui-icons/type.svg");
+        }
+
+        &:nth-child(3)::after {
+            content: url("../../../assets/ui-icons/humans.svg");
+        }
+
+        &:last-child::after {
+            content: url("../../../assets/ui-icons/earth.svg");
+            left: -50px;
+        }
+    }
+
+    &-right,
+    &-left {
+        flex: 1;
+        text-align: start;
+    }
+
+    &-right {
+        max-width: 200px;
+    }
+
+    &-name {
+        font-weight: 500;
+        line-height: 30px;
+        color: $white-c;
+        font-size: $text-2xl;
+    }
+
+    &-res {
+        font-weight: 900;
+        font-size: $text-xl;
+        line-height: 30px;
+        color: $white-c;
+    }
+}
