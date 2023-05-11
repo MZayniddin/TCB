@@ -1,0 +1,23 @@
+.centers {
+    padding: 100px 0 80px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+    }
+
+    &__list-item {
+        position: relative;
+
+        &::after {
+            width: 130px;
+            height: 140px;
+            content: "";
+            position: absolute;
+            background: no-repeat url("../../assets/images/ui/book.png") center;
+            bottom: -60px;
+            right: -50px;
+        }
+    }
+}
