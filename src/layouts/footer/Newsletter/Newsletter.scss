@@ -1,0 +1,35 @@
+.newsletter {
+    &__wrap {
+        max-width: 320px;
+        display: flex;
+        border-radius: 83px;
+        background: rgba(54, 88, 141, 0.6);
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__input {
+        flex: 1;
+        width: 40%;
+        padding: 0 15px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: $text-lg;
+        line-height: 28px;
+        color: $white-c;
+    }
+
+    &-btn {
+        background-color: $crayola-c;
+        border-radius: 83px;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: $text-lg;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $white-c;
+    }
+}

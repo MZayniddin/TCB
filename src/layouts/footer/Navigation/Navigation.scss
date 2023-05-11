@@ -1,0 +1,14 @@
+.footer__navigation {
+    padding: 0 10px;
+
+
+    &-link {
+        line-height: 31px;
+        text-align: center;
+        color: $white-c;
+
+        &:hover {
+            color: $light-ceil-c;
+        }
+    }
+}

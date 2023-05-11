@@ -1,0 +1,21 @@
+.socials {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 50px);
+        justify-content: space-between;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    &-link {
+        color: $white-c;
+
+        &:hover {
+            color: $crayola-c;
+        }
+    }
+
+    &-icon {
+        font-size: $text-3xl;
+    }
+}

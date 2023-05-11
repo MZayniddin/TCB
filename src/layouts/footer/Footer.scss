@@ -1,0 +1,30 @@
+.footer {
+    padding: 50px 0 30px;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__sitename {
+        color: $white-c;
+        letter-spacing: 2px;
+        font-size: $text-3xl;
+    }
+
+    &__box-title {
+        display: inline-block;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        color: $white-c;
+        margin-bottom: 18px;
+    }
+}
