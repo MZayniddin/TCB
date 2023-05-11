@@ -1,5 +1,16 @@
 .intro {
     padding: 50px 0 150px;
+    position: relative;
+
+    &::after {
+        width: 300px;
+        height: 700px;
+        content: "";
+        background: no-repeat url("../../assets/images/effects/electric-eff.png") left center;
+        position: absolute;
+        bottom: -400px;
+        right: -10px;
+    }
 
     .container {
         position: relative;
