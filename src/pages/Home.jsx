@@ -5,6 +5,7 @@ import { getCenters } from "../actions/centers";
 import CentersSlider from "../components/CentersSlider/CentersSlider";
 import Intro from "../components/Intro/Intro";
 import Statistics from "../components/Statistics/Statistics";
+import CourseTypes from "../components/CourseTypes/CourseTypes";
 
 const Home = () => {
     const dispatch = useDispatch();
@@ -18,6 +19,7 @@ const Home = () => {
             <Intro />
             <Statistics />
             <CentersSlider />
+            <CourseTypes />
         </main>
     );
 };
