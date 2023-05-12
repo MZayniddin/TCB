@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "title": "Why TCB ?",
+        "data": [
+            "At AllOne, we know firsthand how difficult it is to find an educational center. The tedious and often thankless process of finding a center is the reason why AllOne was created - it's what we wanted when we were looking for a center ourselves.",
+            "Our mission is to make life easier for applicants and students. We are creating a platform that simplifies the process of finding a education center, as well as providing a system with a user-friendly interface and many useful tools, rating of educational centers."
+        ]
+    },
+    {
+        "id": 2,
+        "title": "For Applicants",
+        "data": [
+            "Sign up as an student, complete a 5-minute application. No fuss, no additional requirements and completely free!"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "For Centers",
+        "data": [
+            "announce your center to the applicants so applicants can quickly find center and contact if they have any questions."
+        ]
+    },
+    {
+        "id": 4,
+        "title": "For Parents",
+        "data": [
+            "Parents can control the process of finding the right center for their child based on the location of the center, the price of the course, the best teachers of the center and the ratings of the centers."
+        ]
+    }
+]
