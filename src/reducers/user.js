@@ -1,4 +1,4 @@
-import { SIGNIN, SIGNUP } from "../constants/actionsTypes";
+import { SIGNIN, SIGNUP, SWITCH } from "../constants/actionsTypes";
 
 const userReducer = (signUp = false, action) => {
     switch (action.type) {
@@ -7,7 +7,11 @@ const userReducer = (signUp = false, action) => {
 
         case SIGNIN:
             return (signUp = false);
-        default:
+
+        case SWITCH:
+            return !signUp;
+        
+            default:
             return signUp;
     }
 };

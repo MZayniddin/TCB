@@ -1,13 +1,25 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Input from "./Input/Input";
 
 import logo from "../../assets/images/logo/logo.svg";
 import "./Form.scss";
 
-const initialState = {};
+const initialState = {
+    name: "",
+    surname: "",
+    username: "",
+    email: "",
+    phone_number: "",
+    password: "",
+};
 
 const Form = () => {
-    const signUp = useSelector((state) => state.user);
+    const isSignUp = useSelector((state) => state.user);
+    const dispatch = useDispatch();
+
+    const switchMode = () => {
+        dispatch({ type: "SWITCH" });
+    };
 
     return (
         <section className="auth">
@@ -17,7 +29,7 @@ const Form = () => {
                         <img src={logo} alt="TCB logo" />
                         <h2 className="auth__form-title">TCB</h2>
                     </div>
-                    {signUp && (
+                    {isSignUp && (
                         <div className="auth__user-info">
                             <Input
                                 autoFocus={true}
@@ -37,8 +49,8 @@ const Form = () => {
                         className="form__input"
                         placeholder="User name"
                     />
-                    {signUp && (
-                        <>
+                    {isSignUp && (
+                        <div className="auth__user-info">
                             <Input
                                 type="text"
                                 name="phone_number"
@@ -51,7 +63,7 @@ const Form = () => {
                                 className="form__input"
                                 placeholder="Email"
                             />
-                        </>
+                        </div>
                     )}
                     <Input
                         type="password"
@@ -59,7 +71,12 @@ const Form = () => {
                         placeholder="Password"
                     />
                     <button className="auth__submit-btn" type="submit">
-                        {signUp ? "Sign up" : "Sign in"}
+                        {isSignUp ? "Sign up" : "Sign in"}
+                    </button>
+                    <button className="auth__switch-btn" onClick={switchMode}>
+                        {isSignUp
+                            ? "Already have an account? Sign In"
+                            : "Don't have an account? Sign Up"}
                     </button>
                 </form>
             </div>

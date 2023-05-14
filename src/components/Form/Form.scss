@@ -45,4 +45,14 @@
         margin-top: 20px;
     }
 
+    &__switch-btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 15px;
+        line-height: 19px;
+        color: $white-c;
+        margin-top: 30px;
+    }
+
 }
