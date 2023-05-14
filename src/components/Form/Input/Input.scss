@@ -1,0 +1,19 @@
+.form__input {
+    padding: 10px 0px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid $white-c;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white-c;
+}
+
+.auth__user-info  {
+    display: flex;
+    gap: 40px;
+    
+}

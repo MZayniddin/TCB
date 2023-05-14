@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import Centers from "../pages/Center";
 import Map from "../pages/Map";
 import About from "../pages/About";
+import Auth from "../pages/Auth";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
                 element: <About />,
             },
         ],
+    },
+    {
+        path: "/auth",
+        element: <Auth />,
     },
 ]);
 

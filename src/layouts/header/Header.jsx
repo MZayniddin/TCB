@@ -1,3 +1,4 @@
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import NavLinkItem from "./NavLinkItem/NavLinkItem";
 import LinkBtn from "./LinkBtn/LinkBtn";
@@ -7,6 +8,16 @@ import logo from "../../assets/images/logo/logo.svg";
 import "./Header.scss";
 
 const Header = () => {
+    const dispatch = useDispatch();
+
+    const handleClick = (e) => {
+        if (e.target.innerText === "Log In") {
+            dispatch({ type: "SIGNIN" });
+        } else {
+            dispatch({ type: "SIGNUP" });
+        }
+    };
+
     return (
         <header className="header">
             <div className="container">
@@ -22,6 +33,7 @@ const Header = () => {
                     <nav className="header-nav">
                         <ul className="header-nav__list">
                             <NavLinkItem to="/" name="Home" />
+                            <NavLinkItem to="/about" name="About" />
                             <NavLinkItem to="/centers" name="Centers" />
                             <NavLinkItem to="/map" name="Map" />
                         </ul>
@@ -29,12 +41,14 @@ const Header = () => {
 
                     <div className="header__right">
                         <LinkBtn
-                            to="/login"
+                            handleClick={handleClick}
+                            to="/auth"
                             name="Log In"
                             className="link-login"
                         />
                         <LinkBtn
-                            to="/signup"
+                            handleClick={handleClick}
+                            to="/auth"
                             name="Sign Up"
                             className="link-signup"
                         />

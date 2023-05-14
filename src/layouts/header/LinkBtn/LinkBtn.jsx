@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-import "./LinkBtn.scss"
+import "./LinkBtn.scss";
 
-const LinkBtn = ({ to, className, name }) => {
+const LinkBtn = ({ to, className, name, handleClick }) => {
     return (
-        <Link className={`link-btn ${className}`} to={to}>
+        <Link onClick={handleClick} className={`link-btn ${className}`} to={to}>
             {name}
         </Link>
     );
