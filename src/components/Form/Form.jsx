@@ -4,8 +4,11 @@ import Input from "./Input/Input";
 import logo from "../../assets/images/logo/logo.svg";
 import "./Form.scss";
 
+const initialState = {};
+
 const Form = () => {
     const signUp = useSelector((state) => state.user);
+
     return (
         <section className="auth">
             <div className="container">
