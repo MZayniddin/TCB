@@ -1,6 +1,6 @@
 .search-res {
     position: absolute;
-    top: 110%;
+    top: 102%;
     left: 0;
     width: 100%;
     border-radius: 10px;
@@ -30,14 +30,13 @@
     }
 
     &__title {
-        color: #fff;
+        color: $white-c;
         font-size: 18px;
         font-weight: bold;
     }
 
     &__subname {
-        color: #fff;
-
+        color: $white-c;
     }
 
     &::-webkit-scrollbar {
@@ -45,11 +44,11 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: var($primary-c);
+        background-color: $white-c;
         border-radius: 5px;
     }
 
     &::-webkit-scrollbar-track {
-        background: var($white-c);
+        background: #93999b;
     }
 }

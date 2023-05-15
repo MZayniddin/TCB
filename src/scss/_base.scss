@@ -7,7 +7,7 @@
     font-family: "Outfit", sans-serif;
 }
 
-body{ 
+body {
     background-color: $primary-c;
     overflow-x: hidden;
 }
@@ -65,10 +65,10 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: var($primary-c);
+    background: $crayola-c;
     border-radius: 5px;
 }
 
 body::-webkit-scrollbar-track {
-    background: var($white-c);
+    background: $primary-c;
 }
