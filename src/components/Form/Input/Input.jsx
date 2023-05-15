@@ -1,6 +1,13 @@
 import "./Input.scss";
 
-const Input = ({ placeholder, className, type, autoFocus, name }) => {
+const Input = ({
+    placeholder,
+    className,
+    type,
+    autoFocus,
+    name,
+    handleChange,
+}) => {
     return (
         <input
             type={type}
@@ -9,6 +16,7 @@ const Input = ({ placeholder, className, type, autoFocus, name }) => {
             className={className}
             autoFocus={autoFocus}
             autoComplete="current-password"
+            onChange={handleChange}
             required
         />
     );
