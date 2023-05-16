@@ -6,6 +6,7 @@ import Centers from "../pages/Center";
 import Map from "../pages/Map";
 import About from "../pages/About";
 import Auth from "../pages/Auth";
+import Detail from "../pages/Detail";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: "about",
                 element: <About />,
+            },
+            {
+                path: "detail/:id",
+                element: <Detail />,
             },
         ],
     },
