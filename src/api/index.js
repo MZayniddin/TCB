@@ -5,6 +5,7 @@ const API = axios.create({
 });
 
 export const fetchCenters = () => API.get("/center/list/");
+export const fetchCourses = () => API.get("/courses/list/course/center/");
 export const searchCenters = (value) => API.get(`/center/list/?search=${value}`);
 
 export const signup = (formData) => API.post("/user/signup/", formData);

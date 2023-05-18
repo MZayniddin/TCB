@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
 import Centers from "../pages/Center";
-import Map from "../pages/Map";
+import Courses from "../pages/Courses";
 import About from "../pages/About";
 import Auth from "../pages/Auth";
 import Detail from "../pages/Detail";
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
                 element: <Centers />,
             },
             {
-                path: "map",
-                element: <Map />,
+                path: "courses",
+                element: <Courses />,
             },
             {
                 path: "about",

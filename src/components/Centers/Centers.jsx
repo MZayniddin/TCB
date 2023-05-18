@@ -5,7 +5,7 @@ import CenterCard from "../CenterCard/CenterCard";
 
 const Centers = () => {
     const centers = useSelector((state) => state.centers);
-    console.log(centers);
+
     return (
         <section className="centers">
             <div className="container">

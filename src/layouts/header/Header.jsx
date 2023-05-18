@@ -35,9 +35,9 @@ const Header = () => {
                             <NavLinkItem to="/" name="Home" />
                             <NavLinkItem to="/about" name="About" />
                             <NavLinkItem to="/centers" name="Centers" />
-                            <NavLinkItem to="/map" name="Map" />
+                            <NavLinkItem to="/courses" name="Courses" />
                         </ul>
-                    </nav>
+                    </nav>  
 
                     <div className="header__right">
                         <LinkBtn
