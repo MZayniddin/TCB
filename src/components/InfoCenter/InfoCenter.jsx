@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import CenterCard from "../CenterCard/CenterCard";
 
 import "./InfoCenter.scss";
+import CourseItem from "../CourseItem/CourseItem";
 
 const InfoCenter = () => {
     const { id } = useParams();
@@ -17,21 +18,7 @@ const InfoCenter = () => {
                 <h2 className="info-title">Courses</h2>
                 <ul className="info-course__list">
                     {center?.courses?.map((course) => (
-                        <li key={course?.id} className="info-course__list-item">
-                            <p className="info-course__name">
-                                <strong>{course?.name}</strong>
-                            </p>
-                            <div className="info-course__detail">
-                                <p>Price: </p> <p>{course?.price}</p>
-                            </div>
-                            <div className="info-course__detail">
-                                <p>Duration: </p>{" "}
-                                <p>{course?.course_duration} month</p>
-                            </div>
-                            <div className="info-course__detail">
-                                <p>Category: </p> <p>{course?.category.name}</p>
-                            </div>
-                        </li>
+                        <CourseItem key={course.id} course={course} />
                     ))}
                 </ul>
             </div>

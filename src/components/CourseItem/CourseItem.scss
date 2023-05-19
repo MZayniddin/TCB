@@ -1,0 +1,14 @@
+.info-course__list-item {
+    min-height: 280px;
+    max-width: 300px;
+    width: 100%;
+    align-self: flex-start;
+    padding: 40px 30px 20px;
+    // background: conic-gradient(from 180deg at 50% 50%, #AE43C4 -67.5deg, rgba(196, 112, 213, 0.3) 142.5deg, #AE43C4 292.5deg, rgba(196, 112, 213, 0.3) 502.5deg);
+    // box-shadow: 0px 10px 75px rgba(157, 66, 179, 0.5);
+    background: conic-gradient(from 180deg at 50% 50%, #0A1145 -41.25deg, #00C9FF 159.38deg, #0A1145 318.75deg, #00C9FF 519.38deg);
+    box-shadow: 0px 10px 50px rgba(22, 29, 94, 0.7);
+    border-radius: 42px;
+    position: relative;
+    z-index: 1;
+}

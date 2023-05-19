@@ -2,11 +2,13 @@ import * as api from "../api";
 
 import { GET_ALL_COURSES } from "../constants/actionsTypes";
 
-export const getCourses = () => async (dispatch) => {
+export const getCourses = (price, coursesType) => async (dispatch) => {
     try {
-        const { data } = await api.fetchCourses();
+        console.log(coursesType)
+        const { data } = await api.fetchCourses(price, coursesType);
+        console.log(data.results)
 
-        dispatch({ type: GET_ALL_COURSES, payload: data.data });
+        dispatch({ type: GET_ALL_COURSES, payload: data.results });
     } catch (error) {
         console.log(error);
     }
