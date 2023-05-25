@@ -7,6 +7,7 @@ import Courses from "../pages/Courses";
 import About from "../pages/About";
 import Auth from "../pages/Auth";
 import Detail from "../pages/Detail";
+import Compare from "../pages/Compare";
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             {
                 path: "detail/:id",
                 element: <Detail />,
+            },
+            {
+                path: "compare",
+                element: <Compare />,
             },
         ],
     },

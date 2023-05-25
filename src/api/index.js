@@ -13,5 +13,6 @@ export const signin = (formData) => API.post("/user/signin/", formData);
 
 export const fetchCourses = (price, courseType) =>
     API.get(
-        `/courses/list/range/filter/?category__name=${courseType}&name=&price_min=${price[0]}&price_max=${price[1]}`
+        `/courses/list/range/filter/?category__name=${courseType}&name=&price_min=&price_max=${price[1]}`
+        // `/center/list_courses/?courses__price_min=${price[0]}&courses__price_max=${price[1]}`
     );

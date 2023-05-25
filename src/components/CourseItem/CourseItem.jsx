@@ -1,7 +1,13 @@
+import { useDispatch } from "react-redux";
+import { RiScalesFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import "./CourseItem.scss";
 
 const CourseItem = ({ course, link, centerName }) => {
+    const dispatch = useDispatch();
+    const sendCompare = () => {
+        dispatch({ type: "ADD", payload: course });
+    };
     return (
         <li className="info-course__list-item">
             <Link to={link}>
@@ -22,6 +28,7 @@ const CourseItem = ({ course, link, centerName }) => {
                         <p>Academy: </p> <p>{centerName}</p>
                     </div>
                 )}
+                <RiScalesFill onClick={sendCompare} className="scale" />
             </Link>
         </li>
     );

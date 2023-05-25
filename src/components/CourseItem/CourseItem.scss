@@ -11,4 +11,13 @@
     border-radius: 42px;
     position: relative;
     z-index: 1;
+
+    .scale {
+        font-size: $text-lg;
+        color: $white-c;
+
+        &:active {
+            color: gold;
+        }
+    }
 }

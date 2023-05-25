@@ -36,6 +36,7 @@ const Header = () => {
                             <NavLinkItem to="/about" name="About" />
                             <NavLinkItem to="/centers" name="Centers" />
                             <NavLinkItem to="/courses" name="Courses" />
+                            <NavLinkItem to="/compare" name="Compare" />
                         </ul>
                     </nav>  
 
